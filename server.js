@@ -17,13 +17,13 @@ connectDB();
 
 const app = express();
 
-// CORS Options
 const corsOptions = {
-  origin: ['http://localhost:3000','https://pqbhomes.vercel.app'], // Allow only frontend origin
-  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'], // Allowed methods
-  allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
-  credentials: true, // Allow credentials (cookies, authorization headers, etc.)
+  origin: '*', // Allow all origins
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true, // Allow credentials
 };
+
 
 // Middleware
 app.use(cors(corsOptions));
