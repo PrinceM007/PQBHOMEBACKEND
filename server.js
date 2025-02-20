@@ -19,7 +19,7 @@ const app = express();
 
 // CORS Options
 const corsOptions = {
-  origin: 'http://localhost:3000', // Allow only frontend origin
+  origin: ['http://localhost:3000','https://pqbhomes.vercel.app'], // Allow only frontend origin
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'], // Allowed methods
   allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
   credentials: true, // Allow credentials (cookies, authorization headers, etc.)
